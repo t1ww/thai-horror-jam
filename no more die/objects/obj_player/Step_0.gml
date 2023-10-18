@@ -25,7 +25,7 @@ if(hsp != 0){
 move_and_collide(hsp,vsp,col)
 
 if(place_meeting(x,y,obj_button)){
-	with(instance_position(x,y,obj_button)){
+	with(instance_place(x,y,obj_button)){
 		press();	
 	}	
 }

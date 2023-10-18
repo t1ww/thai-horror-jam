@@ -67,7 +67,7 @@ reset_grid = function(){
 	setpath(game.button_grid, game.previous_start.index_x, game.previous_start.index_y,
 		game.previous_end.index_x, game.previous_end.index_y,
 	);
-	// start blink
+// start blink
 	// blink
 	with(obj_button){
 		if(state == safe_state){
@@ -75,7 +75,7 @@ reset_grid = function(){
 			blink();
 		}
 		if(state == flaw_state){
-			blinkcount = irandom(5)+1;
+			blinkcount = irandom(max(3, 6-(game.level/40)))+1;
 			blink();
 		}
 	}

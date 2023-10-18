@@ -19,5 +19,5 @@ if blinkcount > 0 {
 	}
 	blinkcount--;
 	if(blinkcount == 0){image_index = 0;}
-	alarm[0] = 10 - (game.level/10);
+	alarm[0] = max(1,10 - (game.level/10));
 }
